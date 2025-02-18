@@ -8,6 +8,15 @@ a{
     text-decoration: none;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+main .content{
+    max-width: 2000px;
+}
 
 nav{
     position: sticky;
@@ -27,7 +36,7 @@ nav a.active{
 }
 
 .fullsize{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -63,4 +72,42 @@ nav a.active{
     border: none;
     width: auto;
     height: 50px;
+}
+
+.halfsize{
+    max-width: 1000px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#photographer{
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.grid-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.grid-wrapper .image-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    border-radius: 25px;
+    height: 400px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.grid-wrapper .right{
+    margin-top: 150px;
 }
