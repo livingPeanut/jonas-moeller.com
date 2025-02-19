@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./fonts.css">
     <link rel="stylesheet" href="./style.css">
+    
     <script src="./assets/jquery-3.7.1.min.js"></script>
-    <!-- <script src="./assets/gsap.min.js"></script>
-    <script src="./assets/ScrollTrigger.min.js"></script> -->
+    <script src="./assets/gsap.min.js"></script>
+    <script src="./assets/ScrollTrigger.min.js"></script>
     
     <script src="./script.js"></script>
     <title>Jonas Möller</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <nav>
-        <a class="active" href="#about">About</a>
-        <a href="">Contact</a>
+        <a id="nav-about" class="active" href="#about">About</a>
+        <a id="nav-contact" href="#contact">Contact</a>
     </nav>
     <main>
         <div class="content">
             <section id="about">
                 <div class="center fullsize">
-                    <div class="content">
+                    <div class="content title-text">
 
                         <h1>Hey, I'm
                         <div id="inline-image">
@@ -33,9 +36,9 @@
             </section>
             <section id="photographer">
                 <div class="halfsize">
-                    <div>
+                    <div class="scroll-text">
                         <h1>I'm a
-                            <div>
+                            <div class="text-options">
                                 <span> photographer</span>
                                 <span class="inactive"> programmer</span>
                             </div>
@@ -78,5 +81,10 @@
         </div>
 
     </main>
+    <footer id="contact">
+        <div>
+            Contact
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,7 +1,10 @@
 *{
     font-family: "Inter", "sans-serif";
     --primary: black;
+    --inactive: #b1b1b1;
+    --background: white;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -12,10 +15,10 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 main .content{
     max-width: 2000px;
+    width: 100%;
 }
 
 nav{
@@ -28,6 +31,7 @@ nav{
 nav a{
     margin-right: 25px;
     color: var(--primary);
+    background: var(--background);
 }
 nav a.active{
     padding: 7px 10px;
@@ -110,4 +114,22 @@ nav a.active{
 
 .grid-wrapper .right{
     margin-top: 150px;
+}
+
+.scroll-text h1{
+    display: flex;
+    align-items: baseline;
+}
+.scroll-text .text-options{
+    margin-left: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-text .inactive{
+    color: var(--inactive);
+}
+
+footer{
+    height: 100vh;
 }
